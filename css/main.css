@@ -79,6 +79,25 @@ body {
   padding: 0 100px 0 100px;
   background-color: black;
 }
+.image_container {
+  position: relative;
+}
+.sold_out {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  background-color: #000000;
+  color: white;
+  font-family: "KanitExtraLight";
+  padding: 10px;
+}
+.sale {
+  background-color: #962222;
+  color: white;
+  font-family: "KanitExtraLight";
+  padding: 10px;
+}
+
 /* product page */
 
 .grid_2-2-1 {
