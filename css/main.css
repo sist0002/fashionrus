@@ -17,6 +17,7 @@ header {
   padding: 10px 10px 10px 50px;
   position: sticky;
   top: 0;
+  z-index: 1;
   a {
     text-decoration: none;
     color: white;
@@ -46,7 +47,7 @@ body {
   }
 }
 .category_list_container:hover {
-  border: 10px solid black;
+  outline: 10px solid black;
 }
 .category_grid {
   display: grid;
@@ -62,6 +63,10 @@ body {
   padding: 20px 50px 20px 50px;
   color: #000000;
   text-align: center;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 5;
+  gap: 0;
   a {
     text-decoration: none;
     color: #000000;
@@ -73,7 +78,7 @@ body {
   }
 }
 .product_list_container:hover {
-  border: 10px solid #2c3491;
+  outline: 10px solid #2c3491;
 }
 .product_section {
   padding: 0 100px 0 100px;
@@ -81,6 +86,9 @@ body {
 }
 .image_container {
   position: relative;
+}
+.hidden {
+  display: none;
 }
 .sold_out {
   position: absolute;
@@ -90,19 +98,30 @@ body {
   color: white;
   font-family: "KanitExtraLight";
   padding: 10px;
+  display: block;
 }
 .sale {
   background-color: #962222;
   color: white;
   font-family: "KanitExtraLight";
   padding: 10px;
+  display: block;
+  p {
+    color: white;
+  }
+}
+.price_outline {
+  text-decoration: line-through;
+}
+.sold_out_opacity {
+  opacity: 20%;
 }
 
 /* product page */
 
 .grid_2-2-1 {
   display: grid;
-  grid-template-columns: auto 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 50px;
   margin: 0 100px 0 100px;
   h2 {
@@ -119,6 +138,10 @@ body {
     padding-bottom: 30px;
     margin: 0;
     text-align: center;
+  }
+  img {
+    max-width: 500px;
+    margin: auto;
   }
 }
 .choose_size {
