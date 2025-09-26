@@ -13,16 +13,16 @@ function showProducts(products) {
      product_list_container.innerHTML +=  `<div class="product_list_container">
      <a href="produkt.html?id=${element.id}">
               <div class="image_container">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp" alt="cap" width="100%" />
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp" class="${element.soldout && "sold_out_opacity"}" alt="cap" width="100%" />
                 <div class="hidden ${element.soldout && "sold_out"}" >Sold out</div>
               </div>
               </a>
               <h3>${element.productdisplayname}</h3>
               <p class="category">${element.category}</p>
-              <p class="price">${element.price} DKK</p>
+              <p class="price ${element.discount && "price_outline"}">${element.price} DKK</p>
               <div class="hidden ${element.discount && "sale"}">
               <p>${element.discount} %</p>
-              <p>Now DKK ${Math.round(element.price - element.price * element.discount / 100)}</p>
+              <p>NOW ${Math.round(element.price - element.price * element.discount / 100)} DKK</p>
               </div>
     </div>`;
     })

@@ -110,6 +110,12 @@ body {
     color: white;
   }
 }
+.price_outline {
+  text-decoration: line-through;
+}
+.sold_out_opacity {
+  opacity: 20%;
+}
 
 /* product page */
 
