@@ -47,7 +47,7 @@ body {
   }
 }
 .category_list_container:hover {
-  border: 10px solid black;
+  outline: 10px solid black;
 }
 .category_grid {
   display: grid;
@@ -74,7 +74,7 @@ body {
   }
 }
 .product_list_container:hover {
-  border: 10px solid #2c3491;
+  outline: 10px solid #2c3491;
 }
 .product_section {
   padding: 0 100px 0 100px;
