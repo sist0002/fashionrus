@@ -117,6 +117,20 @@ body {
   opacity: 20%;
 }
 
+#filters {
+  margin-bottom: 10px;
+  button {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  button:hover {
+    color: #962222;
+  }
+}
+
 /* product page */
 
 .grid_2-2-1 {
