@@ -9,7 +9,6 @@ fetch("https://kea-alt-del.dk/t7/api/categories")
             categorylist.innerHTML +=  
             `<div class="category_list_container">
                 <a href="produktliste.html?category=${category.category}">
-                    <img src="https://kea-alt-del.dk/t7/images/webp/640/2360.webp" alt="cap" width="100%" />
                     <h3>${category.category}</h3>
                 </a>
             </div>`
