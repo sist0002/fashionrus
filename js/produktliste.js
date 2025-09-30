@@ -20,7 +20,7 @@ function showFiltered() {
 
 let allData;
 
-fetch(`https://kea-alt-del.dk/t7/api/products?limit=10&category=${category}`)
+fetch(`https://kea-alt-del.dk/t7/api/products?limit=100&category=${category}`)
     .then((response) => response.json())
     .then((data) => {
       allData = data;
