@@ -77,6 +77,16 @@ body {
     color: gray;
   }
 }
+p.price {
+  font-family: "KanitItalic";
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+p.category {
+  margin: 0;
+}
 .product_list_container:hover {
   outline: 10px solid #2c3491;
 }
@@ -94,24 +104,37 @@ body {
   position: absolute;
   top: 1px;
   left: 1px;
-  background-color: #000000;
-  color: white;
-  font-family: "KanitExtraLight";
-  padding: 10px;
-  display: block;
-}
-.sale {
   background-color: #962222;
   color: white;
   font-family: "KanitExtraLight";
-  padding: 10px;
+  padding: 20px;
   display: block;
+}
+.sale {
+  background-color: #e0b20b;
+  color: white;
+  width: 100px;
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 1px;
   p {
     color: white;
+    font-family: "KanitItalic";
   }
 }
-.price_outline {
+.sale_marker {
+  display: block;
+  p {
+    color: #e0b20b;
+    font-family: "KanitItalic";
+    font-size: 15px;
+  }
+}
+
+p.price_outline {
   text-decoration: line-through;
+  color: grey;
 }
 .sold_out_opacity {
   opacity: 20%;
@@ -121,14 +144,18 @@ body {
 #sorting {
   margin-bottom: 10px;
   button {
-    background-color: white;
+    background-color: grey;
     padding: 20px;
     border: none;
     border-radius: 10px;
     font-size: 20px;
+    color: white;
   }
   button:hover {
-    color: #962222;
+    background-color: #962222;
+  }
+  button:focus {
+    background-color: #962222;
   }
 }
 
