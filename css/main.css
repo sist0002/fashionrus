@@ -117,7 +117,8 @@ body {
   opacity: 20%;
 }
 
-#filters {
+#filters,
+#sorting {
   margin-bottom: 10px;
   button {
     background-color: white;
